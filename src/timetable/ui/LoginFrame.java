@@ -33,8 +33,8 @@ public class LoginFrame extends JFrame {
         login.setBackground(new Color(176,224,230));
         
         login.addActionListener(e -> doLogin());
-        password.addActionListener(e -> doLogin());   // pressing Enter also logs in
-        
+        password.addActionListener(e -> doLogin());   // pressing Enter also logs in password 
+        username.addActionListener(e -> doLogin());  // pressing Enter login on username section
    
         add(form, BorderLayout.NORTH);
         add(message, BorderLayout.CENTER);
