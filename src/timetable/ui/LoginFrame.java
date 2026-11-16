@@ -12,6 +12,7 @@ public class LoginFrame extends JFrame {
     private final JPasswordField password = new JPasswordField(15);
     private final JLabel message = new JLabel("	Welcome ");
 
+
     public LoginFrame() {
         super("Login - SASS"); 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -26,13 +27,15 @@ public class LoginFrame extends JFrame {
         message.setForeground(Color.BLACK);
         message.setHorizontalAlignment(SwingConstants.CENTER);
 
+
         JButton login = new JButton("Login");
         //login.setBackground(Color.BLUE);
         login.setBackground(new Color(176,224,230));
         
         login.addActionListener(e -> doLogin());
         password.addActionListener(e -> doLogin());   // pressing Enter also logs in
-
+        
+   
         add(form, BorderLayout.NORTH);
         add(message, BorderLayout.CENTER);
         add(login, BorderLayout.SOUTH);
@@ -45,14 +48,13 @@ public class LoginFrame extends JFrame {
                 new String(password.getPassword()));
         while (user == null) {
 
-            message.setText("Invalid username or password.");
-            message.setForeground(Color.RED);
+        	message.setForeground(Color.BLACK); message.setText("INVALID USERNAME OR PASSWORD.");message.setFont(new Font("Times New Roman", Font.BOLD, 12));
 
             Timer timer = new Timer(250, e -> {
 
                 if (message.getForeground().equals(Color.RED))
-                {message.setForeground(Color.BLACK);} 
-                else {message.setForeground(Color.RED); }
+                {message.setForeground(Color.BLACK); message.setText("INVALID USERNAME OR PASSWORD.");message.setFont(new Font("Times New Roman", Font.BOLD, 14));} 
+                else {message.setForeground(Color.RED); message.setText("INVALID USERNAME OR PASSWORD.");message.setFont(new Font("Times New Roman", Font.BOLD, 15));}
             });
             
             timer.setRepeats(true);

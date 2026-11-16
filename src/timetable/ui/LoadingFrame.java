@@ -114,25 +114,25 @@ public class LoadingFrame extends JFrame {
                 Thread.sleep(100);
 
                 setTitle("Loading TimetableController.java ");
-                Thread.sleep(100);
+                Thread.sleep(200);
 
                 setTitle("Loading Availability.java ");
                 Thread.sleep(100);
 
                 setTitle("Loading ClassSession.java ");
-                Thread.sleep(100);
+                Thread.sleep(50);
 
                 setTitle("Loading ConflictReport.java ");
                 Thread.sleep(100);
 
                 setTitle("Loading Course.java ");
-                Thread.sleep(100);
+                Thread.sleep(50);
 
                 setTitle("Loading Laboratory.java ");
                 Thread.sleep(100);
 
                 setTitle("Loading Lecturer.java ");
-                Thread.sleep(100);
+                Thread.sleep(300);
 
                 setTitle("Loading ProgrammeLeader.java ");
                 Thread.sleep(100);
@@ -141,7 +141,7 @@ public class LoadingFrame extends JFrame {
                 Thread.sleep(100);
 
                 setTitle("Loading Room.java ");
-                Thread.sleep(100);
+                Thread.sleep(300);
 
                 setTitle("Loading Student.java ");
                 Thread.sleep(100);
@@ -162,22 +162,24 @@ public class LoadingFrame extends JFrame {
                 Thread.sleep(100);
 
                 setTitle("Loading AuthService.java ");
-                Thread.sleep(100);
+                Thread.sleep(20);
 
                 setTitle("Loading ConflictValidator.java ");
-                Thread.sleep(100);
+                Thread.sleep(20);
 
                 setTitle("Loading SchedulingService.java ");
                 Thread.sleep(100);
 
                 setTitle("Loading GreedyStrategy.java ");
-                Thread.sleep(100);
+                Thread.sleep(20);
 
                 setTitle("Loading PriorityStrategy.java ");
-                Thread.sleep(100);
+                Thread.sleep(20);
 
                 setTitle("Loading SchedulingStrategy.java ");
                 Thread.sleep(100);
+                
+                setTitle("Loading . . . . . .");
 
             bar.setForeground(new Color(176,224,230));
             } catch (InterruptedException e) {
@@ -203,7 +205,7 @@ public class LoadingFrame extends JFrame {
             
             SwingUtilities.invokeLater(() -> {
 
-            	
+           //:)
            
                 dispose();
 
