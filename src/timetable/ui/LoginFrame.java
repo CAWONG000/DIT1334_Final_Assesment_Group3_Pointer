@@ -13,7 +13,7 @@ public class LoginFrame extends JFrame {
     private final JLabel message = new JLabel("	Welcome ");
 
     public LoginFrame() {
-        super("Login - Smart Academic Scheduling System");
+        super("Login - SASS"); 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         JPanel form = new JPanel(new GridLayout(0, 2, 10, 10));
@@ -60,6 +60,6 @@ public class LoginFrame extends JFrame {
             return;
         }
         dispose();
-        new MainFrame(user).setVisible(true);
+        new LoadingFrame(user).setVisible(true);
     }
 }
